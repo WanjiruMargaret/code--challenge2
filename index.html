@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM-manupulation</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
     <h1>Guest list</h1>
-    <div class="div">
-        <input type="text" id="name" placeholder="Enter your name">
+    <h1>Guest list</h1>
+    <div class="wrapper">
+      <form>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          autocomplete="off"
+        />
         <button id="add">Submit</button>
-        <button id="remove">Remove</button>
+      </form>
+      <ul id="list"></ul>
     </div>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
