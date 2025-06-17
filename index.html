@@ -13,7 +13,6 @@
   </head>
   <body>
     <h1>Guest list</h1>
-    <h1>Guest list</h1>
     <div class="wrapper">
       <form>
         <input
@@ -24,7 +23,14 @@
         />
         <button id="add">Submit</button>
       </form>
-      <ul id="list"></ul>
+      <ul id="list">
+        <li class="list-items">
+          <label for="name" class="list-text"></label>
+          <button class="delete-button">
+            <span class="material-symbols-outlined">delete</span>
+          </button>
+        </li>
+      </ul>
     </div>
     <script src="./index.js"></script>
   </body>
