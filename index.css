@@ -99,6 +99,11 @@ h1{
     fill: #ff0033;
     color: #ff0033;
 }
+.rsvp-status{
+    font-weight: bold;
+    color: var(--accent);
+    
+}
 @media (max-width: 600px) {
     html {
         font-size: 12pt;

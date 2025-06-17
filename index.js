@@ -4,7 +4,6 @@ const listUl = document.getElementById('list');
 
 let allGuests = [];
 
-// Load guests from localStorage on page load
 window.addEventListener('DOMContentLoaded', () => {
     const saved = localStorage.getItem('lists');
     if (saved) {
@@ -55,13 +54,11 @@ function createGuestList(guest, listIndex) {
         <span class="material-symbols-outlined">delete</span>                 
       </button>
     `;
-    // RSVP toggle functionality
     listLI.querySelector('.toggle-rsvp').addEventListener('click', function() {
         allGuests[listIndex].attending = !allGuests[listIndex].attending;
         updateGuestList();
         saveLists();
     });
-    // Delete functionality
     listLI.querySelector('.delete-button').addEventListener('click', function() {
         allGuests.splice(listIndex, 1);
         updateGuestList();
